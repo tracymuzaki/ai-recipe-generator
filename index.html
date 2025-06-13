@@ -6,16 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Recipe Generator</title>
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <header>
             <h1>AI Recipe Generator</h1>
-        <footer>This AI Project was coded by <a href="" target="_blank">Tracy Muzaki</a>
+        </header>
+        <main>
+            <div class="form-wrapper">
+                <form id="recipe-generator-form">
+                    <input type="text" placeholder="Enter the food item" required autofocus autocomplete="off"
+                        class="instructions" id="instructions-input">
+                    <input type="submit" class="submit-button"></input>
+                </form>
+                <div class="hint">i.e Cakes, Cookies or Chicken</div>
+            </div>
+            <div class="recipe hidden" id="recipe"></div>
+        </main>
+        <footer>This AI Project was coded by <a href="https://github.com/tracymuzaki/" target="_blank">Tracy Muzaki</a>
             and
-            is <a href="" target="_blank">open-sourced on GitHub</a>
+            is <a href="https://github.com/tracymuzaki/ai-recipe-project.git" target="_blank">open-sourced on GitHub</a>
             and
-            is hosted on <a href="" target="_blank">Netlify</a>
+            is hosted on <a href="https://my-recipe-generator.netlify.app/" target="_blank">Netlify</a>
         </footer>
+    </div>
     <script src="src/index.js"></script>
 </body>
 
